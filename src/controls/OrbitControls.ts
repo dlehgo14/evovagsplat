@@ -10,7 +10,7 @@ class OrbitControls {
     maxZoom: number = 30;
     orbitSpeed: number = 1;
     panSpeed: number = 1;
-    zoomSpeed: number = 100;
+    zoomSpeed: number = 1;
     dampening: number = 0.12;
     setCameraTarget: (newTarget: Vector3) => void = () => {};
     update: () => void;
@@ -290,18 +290,18 @@ class OrbitControls {
             window.addEventListener("keyup", onKeyUp);
         }
 
-        canvas.addEventListener("dragenter", preventDefault);
-        canvas.addEventListener("dragover", preventDefault);
-        canvas.addEventListener("dragleave", preventDefault);
-        canvas.addEventListener("contextmenu", preventDefault);
+        // canvas.addEventListener("dragenter", preventDefault);
+        // canvas.addEventListener("dragover", preventDefault);
+        // canvas.addEventListener("dragleave", preventDefault);
+        // canvas.addEventListener("contextmenu", preventDefault);
 
-        canvas.addEventListener("mousedown", onMouseDown);
-        canvas.addEventListener("mousemove", onMouseMove);
-        canvas.addEventListener("wheel", onWheel);
+        // canvas.addEventListener("mousedown", onMouseDown);
+        // canvas.addEventListener("mousemove", onMouseMove);
+        // canvas.addEventListener("wheel", onWheel);
 
-        canvas.addEventListener("touchstart", onTouchStart);
-        canvas.addEventListener("touchend", onTouchEnd);
-        canvas.addEventListener("touchmove", onTouchMove);
+        // canvas.addEventListener("touchstart", onTouchStart);
+        // canvas.addEventListener("touchend", onTouchEnd);
+        // canvas.addEventListener("touchmove", onTouchMove);
 
         this.update();
     }
