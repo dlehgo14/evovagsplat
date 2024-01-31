@@ -10,7 +10,7 @@ class OrbitControls {
     maxZoom: number = 30;
     orbitSpeed: number = 1;
     panSpeed: number = 1;
-    zoomSpeed: number = 1;
+    zoomSpeed: number = 100;
     dampening: number = 0.12;
     setCameraTarget: (newTarget: Vector3) => void = () => {};
     update: () => void;
