@@ -1,5 +1,5 @@
 {
-    "name": "evovagsplat",
+    "name": "gsplat",
     "version": "1.0.0",
     "description": "JavaScript Gaussian Splatting library",
     "main": "dist/index.js",
